@@ -1,0 +1,11 @@
+# Versoes EXATAS dos componentes que geraram as releases aprovadas (1.1.5 a 1.1.7).
+# Faixas ("^9.2.2") deixavam o component manager baixar versoes novas ao recriar o
+# ambiente (ex.: lvgl 9.6.0), gerando um binario diferente do gravado na placa.
+# As dependencias indiretas ficam fixadas em dependencies.lock (versionado).
+# Para atualizar um componente: mudar aqui, compilar, validar na placa e
+# registrar em Docs/REGISTRO_DE_BUILDS.md.
+dependencies:
+  idf: ">=5.5.0,<6.0.0"
+  espressif/esp_lcd_st7796: "==1.4.0"
+  lvgl/lvgl: "==9.5.0"
+  espressif/mdns: "==1.11.3"
